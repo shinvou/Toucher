@@ -1,0 +1,11 @@
+{
+	entry = {
+		cell = PSSwitchCell;
+		default = YES;
+		defaults = "com.shinvou.toucher";
+		icon = "Toucher.png";
+		label = Toucher;
+		PostNotification = "com.shinvou.toucher/reloadPreferences";
+		key = isEnabled;
+	};
+}

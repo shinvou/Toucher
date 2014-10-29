@@ -1,0 +1,8 @@
+Package: com.shinvou.toucher
+Name: Toucher
+Depends: mobilesubstrate
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Toucher
+Author: Timm Kandziora
+Section: Tweaks
