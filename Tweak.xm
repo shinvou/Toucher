@@ -1,8 +1,8 @@
 //
 //  Tweak.xm
-//  hook
+//	Toucher
 //
-//  Created by Timm Kandziora on 17.05.14.
+//  Created by Timm Kandziora on 29.10.14.
 //  Copyright (c) 2014 Timm Kandziora. All rights reserved.
 //
 
