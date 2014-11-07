@@ -14,9 +14,7 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import <SpringBoard/SpringBoard.h>
 
-#define settingsPath @"/var/mobile/Library/Preferences/com.shinvou.toucher.plist"
-
-static BOOL toucherEnabled = YES;
+static BOOL toucherEnabled;
 static UIImage *image;
 static UIImageView *imageView;
 
@@ -52,15 +50,7 @@ static UIImageView *imageView;
 
 static void ReloadSettings()
 {
-    NSMutableDictionary *settings = [[NSMutableDictionary alloc] initWithContentsOfFile:settingsPath];
-
-    if (settings) {
-        if ([settings objectForKey:@"isEnabled"]) {
-            toucherEnabled = [[settings objectForKey:@"isEnabled"] boolValue];
-        }
-    }
-
-    [settings release];
+	toucherEnabled = [(id)CFPreferencesCopyAppValue(CFSTR("isEnabled"), CFSTR("com.shinvou.toucher")) boolValue];
 }
 
 %ctor {

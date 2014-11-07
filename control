@@ -1,7 +1,7 @@
 Package: com.shinvou.toucher
 Name: Toucher
 Depends: mobilesubstrate
-Version: 1.0
+Version: 1.1
 Architecture: iphoneos-arm
 Description: Toucher
 Author: Timm Kandziora
